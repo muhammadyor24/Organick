@@ -1,125 +1,134 @@
-.section1c{
+.section1c {
     display: flex;
     justify-content: space-between;
     gap: 15px;
 }
 
-.parents{
+.parents {
     justify-content: space-between;
 }
 
-section{
+section {
     margin: 80px 0;
     padding: 0 0;
 }
 
-.section1, .section2, .section3, .section4{
+.section1,
+.section2,
+.section3,
+.section4 {
     padding: 0 100px;
 }
 
-.sectiongray{
+.sectiongray {
     padding: 0 0;
 
     background-color: #F9F8F8;
 }
 
-.section1, .right1container, .right1cards, .section2{
+.section1,
+.right1container,
+.right1cards,
+.section2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.left1 img, .right2 img{
+.left1 img,
+.right2 img {
     width: 500px;
 }
 
-.right1, .left2{
+.right1,
+.left2 {
     width: 50%;
 }
 
-.right1cards{
+.right1cards {
     gap: 10px;
 }
 
-.left2cards{
+.left2cards {
     display: flex;
     align-items: center;
     gap: 3px;
     background-color: #ECECEC;
     border-radius: 25px;
-    width: fit-content;    
+    width: fit-content;
 }
 
-.left2cards p{
+.left2cards p {
     padding: 10px 30px;
     margin: 0;
 }
 
-.space{
+.space {
     padding-left: 5%;
 }
 
-.sectionrow{
+.sectionrow {
     padding: 50px 100px;
 
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     align-items: center;
     text-align: center;
 }
 
-.cards{
+.cards {
     background-color: #fff;
     border: 1px solid #fff;
     border-radius: 20px;
 }
 
-.cards img{
+.cards img {
     padding: 30px 30px 0px 30px;
 }
 
-.section3{
+.section3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.section3 .cards{
+.section3 .cards {
     border-radius: 25px;
     border: 1px solid #F9F8F8;
     background-color: #F9F8F8;
 }
 
-#lightbg{
+#lightbg {
     border-radius: 25px;
     border: 1px solid white;
     background-color: white;
     box-shadow: gray;
 }
 
-.section3 .cards img{
+.section3 .cards img {
     width: 100%;
     padding: 0 0 15px 0;
 }
 
-.section3 .cards h4, .section3 .cards p{
+.section3 .cards h4,
+.section3 .cards p {
     padding-left: 20px;
 }
 
-.sectiondark{
+.sectiondark {
     margin-top: 80px;
     text-align: center;
     background-color: #274C5B;
     color: #fff;
 }
 
-.sectiondark h1{
+.sectiondark h1 {
     padding-top: 30px;
     height: max-content;
 }
 
-.section4{
+.section4 {
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -127,25 +136,25 @@ section{
     gap: 10px;
 }
 
-.section4 .cards img{
+.section4 .cards img {
     width: 100%;
-    padding: 0 0 15px 0;   
+    padding: 0 0 15px 0;
 }
 
-.section4 .cards{
+.section4 .cards {
     background-color: #274C5B;
     border-radius: 25px;
     border: 1px solid #274C5B;
 }
 
-aside{
+aside {
     padding: 0 150px 150px 150px;
     height: max-content;
     align-items: center;
 
 }
 
-.container2{
+.container2 {
     padding: 0 50px;
     background: url(images/Photo.png) no-repeat center center/cover;
     width: 100%;
@@ -156,42 +165,304 @@ aside{
     justify-content: space-between;
 }
 
-.container2 h2{
+.container2 h2 {
     color: white;
 }
 
-.container2 label{
+.container2 label {
     background-color: #fff;
     color: gray;
 }
 
-.container2 button{
+.container2 button {
     background-color: #274C5B;
     color: #fff;
     border-radius: 5px;
 }
 
-footer{
+footer {
     padding: 0 150px;
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
 
-.contact{
+.contact {
     text-align: right;
 }
 
-.organick{
+.organick {
     text-align: center;
 }
 
-.utility{
+.utility {
     text-align: left;
 }
 
-@media all and (max-width: 1070px){
-    header, .section1, .section2, .section3, .section4{
+#media720 {
+    display: none;
+}
+
+@media all and (max-width: 1070px) {
+
+    .section1,
+    .section2 {
+        padding: 10px 40px;
+    }
+
+    #media720 {
+        display: none;
+    }
+
+    .section3,
+    .section4 {
         padding: 10px 60px;
     }
+
+    .left1 img,
+    .right2 img {
+        width: 300px
+    }
+
+    .sectionrow img {
+        padding-bottom: 20px;
+    }
+
+    .sectionrow p {
+        font-size: 12px;
+    }
+
+    aside {
+        padding: 0 80px 100px 80px;
+    }
+
+    .container2 {
+        padding: 0 10px 0 10px;
+    }
+
+    footer {
+        padding: 0 50px 0 50px;
+    }
+}
+
+@media all and (max-width: 720px) {
+
+    .section1,
+    .section2 {
+        padding: 10px 20px;
+        display: block;
+        align-items: center;
+    }
+
+    .section1 h1,
+    .section2 h1 {
+        text-align: center;
+    }
+
+    .left1,
+    .left2,
+    .right1,
+    .right2 {
+        width: 100%;
+        align-items: center;
+    }
+
+
+    .section3,
+    .section4 {
+        padding: 10px 25px;
+    }
+
+    .section4 {
+        gap: 5px;
+    }
+
+    .left1 img,
+    .right2 img {
+        width: 300px;
+    }
+
+    .left1,
+    .right2 {
+        text-align: center;
+    }
+
+    .sectionrow {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sectionrow img {
+        padding-bottom: 18px;
+    }
+
+    .sectionrow p {
+        font-size: 9px;
+    }
+
+    aside {
+        padding: 0 55px 75px 55px;
+    }
+
+    .container2 {
+        padding: 0 8px 0 8px;
+        height: 30vh;
+    }
+
+    .container2 form button {
+        display: none;
+    }
+
+    .container2 h2 {
+        font-size: 18px;
+    }
+
+    .form-control {
+        width: 80%;
+        float: right;
+    }
+
+    footer {
+        padding: 0 30px 0 30px;
+    }
+
+    footer p {
+        font-size: 9px;
+    }
+
+    footer .socialmedia img {
+        width: 35px;
+    }
+
+}
+
+@media all and (max-width: 360px) {
+    nav img {
+        width: 150px;
+    }
+
+    section {
+        margin-top: 10px;
+    }
+
+    .section1,
+    .section2 {
+        padding: 10px 10px;
+        display: block;
+        align-items: center;
+    }
+
+    .section1 h1,
+    .section2 h1 {
+        text-align: center;
+    }
+
+    .left1,
+    .left2,
+    .right1,
+    .right2 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .section3 {
+        display: block;
+        padding: 10px 30px;
+    }
+
+    .section4 {
+        padding: 10px 15px;
+        gap: 3px;
+    }
+
+    .left1 img,
+    .right2 img {
+        width: 250px;
+    }
+
+    .right1cards h5 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .right1cards {
+        gap: 5px;
+    }
+
+    .right1 img {
+        width: 25px;
+    }
+
+    .left1,
+    .right2 {
+        text-align: center;
+    }
+
+    .sectionrow {
+        padding: 10px 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sectionrow img {
+        padding-bottom: 18px;
+    }
+
+    .sectionrow p {
+        font-size: 7px;
+    }
+
+    aside {
+        padding: 0 25px 50px 25px;
+    }
+
+    .container2 {
+        padding: 0 4px 0 4px;
+        height: 30vh;
+    }
+
+    .container2 form button {
+        display: none;
+    }
+
+    .container2 h2 {
+        font-size: 14px;
+    }
+
+    .form-control {
+        width: 80%;
+        float: right;
+    }
+
+    footer {
+        padding: 0 15px 0 15px;
+    }
+
+    footer h2 {
+        font-size: 20px;
+    }
+
+    footer h3 {
+        font-size: 18px;
+    }
+
+    footer h5 {
+        font-size: 10px;
+        margin-bottom: 2px;
+    }
+
+    footer p {
+        font-size: 9px;
+        line-height: 14px;
+        margin-bottom: 7px;
+    }
+
+    .organick h2 img {
+        width: 30px;
+    }
+
+    footer .socialmedia img {
+        width: 25px;
+    }
+
 }
